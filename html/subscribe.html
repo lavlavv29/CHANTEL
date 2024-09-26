@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe Page</title>
+    <link rel="icon" type="image/x-icon" href="../assets/Icon.png">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/styleSubscribe.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <h1>C H A N T E L</h1>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <ul class="nav-links" id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="shoes.html">Handbags</a></li>
+                <li><a href="events.html">Runway</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+
+            <div class="hamburger-menu">
+                <span class="lines"></span>
+                <span class="lines"></span>
+                <span class="lines"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="section" id="subscribe">
+        <div class="red-box">
+            <h1>Subscribe Now!</h1>
+            <form action="">
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <div class="error-container">
+                    <div class="error" id="err-name"></div>
+                </div>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <div class="error-container">
+                    <div class="error" id="err-email"></div>
+                </div>
+                <input type="phone" name="phone" id="phone" placeholder="Phone Number" required>
+                <div class="error-container">
+                    <div class="error" id="err-phone"></div>
+                </div>
+                <select class="country" name="country" id="country">
+                    <option value="" selected>Select Your Country</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Thailand">Singapore</option>
+                    <option value="Australia">Thailand</option>
+                    <option value="Australia">Hongkong</option>
+                    <option value="Australia">Malaysia</option>
+                    <option value="Australia">United States</option>
+                    <option value="Australia">United Kingdom</option>
+                    <option value="Australia">Canada</option>
+                    <option value="Australia">France</option>
+                    <option value="Australia">Emirates</option>
+                    <option value="Australia">South Africa</option>
+                </select>
+                <div class="error-container">
+                    <div class="error" id="err-country"></div>
+                </div>
+                <div class="konten">
+                    <input type="checkbox" id="term" required>
+                    <label for="">I accept the terms and conditions</label>
+                </div>
+                <div class="error-container">
+                    <div class="error" id="err-term"></div>
+                </div>
+                <div class="btn-submit">
+                    <button class="submit" id="submit" onclick="ValidateData()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrap">
+            <div class="footers">
+                <div class="footer-section">
+                    <h3 class="spesial">CHANTEL</h3>
+                    <p class="pencet" id="spes">
+                        CHANTEL is the epitome of timeless elegance and luxury, specializing in exquisite and sophisticated handbags that embody impeccable craftsmanship and iconic designs.</p>
+                    <div class="medsos">
+                        <a href="#instagram"><i data-feather="instagram"></i></a>
+                        <a href="#twitter"><i data-feather="twitter"></i></a>
+                        <a href="#facebook"><i data-feather="facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">About Us</h3>
+                    <a href="aboutUs.html#history" class="pencet-1" id="abt">History</a>
+                    <a href="aboutUs.html#company-profile" class="pencet1" id="abt">Company Profile</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Information</h3>
+                    <a href="events.html" class="pencet-1" id="fnd">Our Events</a>
+                    <a href="shoes.html" class="pencet1" id="fnd">Handbags</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Subscribe</h3>
+                    <a href="contactUs.html#contact" class="pencet1" id="ctc">Subscribe Now!</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        feather.replace()
+    </script>
+</body>
+<script src="../js/header.js"></script>
+<script src="../js/validation.js"></script>
+</html>

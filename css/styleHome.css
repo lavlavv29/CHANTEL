@@ -1,0 +1,741 @@
+.header{
+    font-family: 'couture';    /* INI KENAPA GAMAU GANTI FONT NAVBAR*/
+}
+
+.landing {
+    min-height: 100vh;
+    padding: 10% 5%;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../assets/Land.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    align-items: center;
+}
+
+.landing .title {
+    font-family: 'couture';
+    color: #000;
+    font-weight: 780;
+    font-size: 64px;
+    /* font-style: italic; */
+    margin-bottom: auto;
+}
+.landing .title span {
+    color: #fff;
+}
+.landing .sub-title-white {
+    font-family: 'couture';
+    color: #000;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.landing .sub-title-red {
+    font-family: 'couture';
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* .landing img {
+    width: 700px;
+    height: 500px;
+} */
+
+.landing img:hover {
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.2);
+}
+
+/* .landing .text-button {
+    margin-top: 15px;
+    background-color: #000000;
+    width: fit-content;
+    padding: 1rem 1rem;
+    border-radius: 10%;
+    font-size: 1rem;
+} */
+
+/* .landing a.button {
+    color: #E7EAEF;
+    size: 10rem;
+}
+
+.landing .text-button:hover {
+    background-color: black;
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+} */
+
+.landing a.button{
+    background: transparent;
+    border: 1.5px solid #000000;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    cursor: pointer;
+    color: black;
+}
+
+.landing a.button:hover{
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    background: #000000;
+    transform: scale(1.05);
+}
+
+.banner .container {
+    margin-top: 4rem;
+    display: flex;
+    position: relative;
+
+}
+
+.banner img {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+}
+
+.banner .container .card-img-overlay {
+    z-index: 2;
+    color: transparent;
+    position: absolute;
+    font-size: 70px;
+    padding: 5%;
+    width: 100%;
+    height: 300px;
+    transition: .5s ease;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner h5 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.banner p {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.space {
+    height: 370px;
+}
+
+.latest-shoes {
+    color: #fff;
+    font-weight: 500;
+    /* font-style: italic; */
+}
+
+.latest-shoes .title {
+    color: #010813;
+    font-weight: 600;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    font-size: 3rem;
+}
+
+.latest-shoes .row {
+    display: flex;
+    justify-content: center;
+    padding: 1% 0;
+    background-color: #ffffff;
+}
+
+.latest-shoes .column {
+    cursor: pointer;
+    margin: 2%;
+    display: flex;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0 2%;
+    /* border-radius: 500px; */
+    width: 20%;
+    position: relative;
+    transition: 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.latest-shoes .card{
+    font-size: 20px;
+}
+
+.latest-shoes .column:hover {
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+    color: rgba(0, 0, 0, 0.641);
+}
+
+.latest-shoes .column img {
+    width: 50%;
+    position: relative;
+}
+
+.latest-shoes .column img:hover {
+    transform: translateY(-10px);
+    transform: scale(1.5);
+    transition: all 0.2s ease-in-out;
+}
+
+.popular-shoes .title {
+    color: #010813;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    font-style: italic;
+}
+
+.popular-shoes .card-wrap {
+    display: flex;
+    /* background-color: yellow; */
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 5%; */
+    margin: 0 5%;
+}
+
+.popular-shoes .card-wrap .card {
+    position: relative;
+    text-align: center;
+    background-color: #ffff;
+    margin-right: 1%;
+    padding: 2%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    color: #13131A;
+}
+
+.popular-shoes .card-wrap .card:hover {
+    /* transform: translateY(-10px); */
+    scale: 1.1;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 54px 55px,
+        rgba(255, 255, 255, 0.1) 0px -12px 30px,
+        rgba(255, 255, 255, 0.1) 0px 4px 6px,
+        rgba(255, 255, 255, 0.15) 0px 12px 13px,
+        rgba(255, 255, 255, 0.07) 0px -3px 5px;
+    /* transition: all 0.2s ease-in-out; */
+}
+
+.popular-shoes .card-wrap .card img {
+    min-width: 200px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.popular-shoes .card-wrap .card .sliders-image .slider-image {
+    display: none;
+}
+
+.popular-shoes .card-wrap .card:hover .prev {
+    opacity: 1;
+}
+
+.popular-shoes .card-wrap .card:hover .next {
+    opacity: 1;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    /* width: auto; */
+    height: fit-content;
+    margin-top: -25px;
+    background: rgba(18, 42, 63, 1);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    opacity: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    opacity: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: fit-content;
+}
+
+@media (max-width: 768px) {
+    .landing .title {
+        font-size: 37px;
+    }
+
+    .landing .sub-title-white {
+        font-size: 27px;
+    }
+
+    .landing .sub-title-red {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 810px) {
+    .popular-shoes .card-wrap .card img {
+        min-width: 100px;
+        height: 60px;
+    }
+    .prev,
+    .next{
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 540px) {
+    .landing .title {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .landing .sub-title-white {
+        font-size: 17px;
+    }
+
+    .landing .sub-title-red {
+        font-size: 17px;
+    }
+
+    .landing .text-button {
+        margin-top: 5px;
+        background-color: #2F455C;
+        width: fit-content;
+        padding: 0.5%;
+        border-radius: 10%;
+        font-size: 10px;
+    }
+
+    .landing img{
+        width: 50vw;
+        height: 40vh;
+    }
+
+    .prev,
+    .next{
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 120px;
+        position: absolute;
+    }
+
+    .banner .container .card-img-overlay {
+        font-size: 70px;
+        height: 120px;
+    }
+
+    .banner h5 {
+        -webkit-text-stroke: 1px #F5F5F5;
+        font-size: 30px;
+    }
+
+    .banner p {
+        color: #F5F5F5;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .space {
+        height: 150px;
+    }
+
+    .latest-shoes {
+        margin-top: 0;
+    }
+
+    .latest-shoes .column .card {
+        font-size: 8px;
+    }
+
+    .latest-shoes .column img {
+        width: 50%;
+        position: relative;
+    }
+
+    .popular-shoes .title {
+        color: #E7EAEF;
+        font-weight: 500;
+        margin-top: 5%;
+        padding-left: 5%;
+        padding-bottom: 1%;
+        font-style: italic;
+    }
+
+    .popular-shoes .card-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5%;
+    }
+
+    .popular-shoes .card-wrap .card {
+        position: relative;
+        text-align: center;
+        margin: 1%;
+        padding: 2%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .popular-shoes .card-wrap .card:hover {
+        transform: translateY(-10px);
+        background-color: aliceblue;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .popular-shoes .card-wrap .card img {
+        width: 50%;
+    }
+
+    .popular-shoes .card-wrap .card .card-text {
+        font-size: 8px;
+    }
+}
+
+
+@media (max-width: 415px) {
+    .landing .title {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .landing .sub-title-white {
+        font-size: 17px;
+    }
+
+    .landing .sub-title-red {
+        font-size: 17px;
+    }
+
+    .landing .text-button {
+        margin-top: 5px;
+        background-color: #2F455C;
+        width: fit-content;
+        padding: 0.5%;
+        border-radius: 10%;
+        font-size: 10px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 120px;
+        position: absolute;
+    }
+
+    .banner .container .card-img-overlay {
+        font-size: 70px;
+        height: 120px;
+    }
+
+    .banner h5 {
+        -webkit-text-stroke: 1px #F5F5F5;
+        font-size: 30px;
+    }
+
+    .banner p {
+        color: #F5F5F5;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .space {
+        height: 150px;
+    }
+
+    .latest-shoes {
+        margin-top: 0;
+    }
+
+    .latest-shoes .column .card {
+        font-size: 8px;
+    }
+
+    .latest-shoes .column img {
+        width: 50%;
+        position: relative;
+    }
+
+    .latest-shoes .title {
+        font-size: 1em;
+        margin-bottom: 1rem;
+    }
+
+    .popular-shoes .title {
+        font-size: 1em;
+        color: #E7EAEF;
+        font-weight: 500;
+        margin-top: 5%;
+        padding-left: 5%;
+        padding-bottom: 1%;
+        font-style: italic;
+    }
+
+    .popular-shoes .card-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .popular-shoes .card-wrap .card {
+        position: relative;
+        text-align: center;
+        margin: 1%;
+        padding: 2%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .popular-shoes .card-wrap .card:hover {
+        transform: translateY(-10px);
+        background-color: aliceblue;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .popular-shoes .card-wrap .card img {
+        min-width: 100px;
+        height: 60px;
+    }
+
+    .popular-shoes .card-wrap .card .card-text {
+        font-size: 8px;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .landing .title {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .landing .sub-title-white {
+        font-size: 17px;
+    }
+
+    .landing .sub-title-red {
+        font-size: 17px;
+    }
+
+    .landing .text-button {
+        margin-top: 5px;
+        background-color: #2F455C;
+        width: fit-content;
+        padding: 0.5%;
+        border-radius: 10%;
+        font-size: 10px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 120px;
+        position: absolute;
+    }
+
+    .banner .container .card-img-overlay {
+        font-size: 70px;
+        height: 120px;
+    }
+
+    .banner h5 {
+        -webkit-text-stroke: 1px #F5F5F5;
+        font-size: 30px;
+    }
+
+    .banner p {
+        color: #F5F5F5;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .space {
+        height: 150px;
+    }
+
+    .latest-shoes {
+        margin-top: 0;
+
+    }
+
+    .latest-shoes .column .card {
+        font-size: 8px;
+    }
+
+    .latest-shoes .column img {
+        width: 50%;
+        position: relative;
+    }
+
+    .popular-shoes .title {
+        color: #E7EAEF;
+        font-weight: 500;
+        margin-top: 5%;
+        font-size: 1em;
+        padding-left: 5%;
+        padding-bottom: 1%;
+        font-style: italic;
+    }
+
+    .popular-shoes .card-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5%;
+    }
+
+    .popular-shoes .card-wrap .card {
+        position: relative;
+        text-align: center;
+        margin: 1%;
+        padding: 2%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .popular-shoes .card-wrap .card:hover {
+        transform: translateY(-10px);
+        background-color: aliceblue;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .popular-shoes .card-wrap .card img {
+        width: 50%;
+    }
+
+    .popular-shoes .card-wrap .card .card-text {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 280px) {
+    .landing .title {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .landing .sub-title-white {
+        font-size: 17px;
+    }
+
+    .landing .sub-title-red {
+        font-size: 17px;
+    }
+
+    .landing .text-button {
+        margin-top: 5px;
+        background-color: #2F455C;
+        width: fit-content;
+        padding: 0.5%;
+        border-radius: 10%;
+        font-size: 10px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 120px;
+        position: absolute;
+    }
+
+    .banner .container .card-img-overlay {
+        font-size: 70px;
+        height: 120px;
+    }
+
+    .banner h5 {
+        -webkit-text-stroke: 1px #F5F5F5;
+        font-size: 22px;
+    }
+
+    .banner p {
+        color: #F5F5F5;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .space {
+        height: 150px;
+    }
+
+    .latest-shoes {
+        margin-top: 0;
+    }
+
+    .latest-shoes .column .card {
+        font-size: 5px;
+    }
+
+    .latest-shoes .column img {
+        width: 50%;
+        position: relative;
+    }
+
+    .popular-shoes .title {
+        color: #E7EAEF;
+        font-weight: 500;
+        margin-top: 5%;
+        padding-left: 5%;
+        padding-bottom: 1%;
+        font-style: italic;
+    }
+
+    .popular-shoes .card-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5%;
+    }
+
+    .popular-shoes .card-wrap .card {
+        position: relative;
+        text-align: center;
+        margin: 1%;
+        padding: 2%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .popular-shoes .card-wrap .card:hover {
+        transform: translateY(-10px);
+        background-color: aliceblue;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .popular-shoes .card-wrap .card img {
+        width: 50%;
+    }
+
+    .popular-shoes .card-wrap .card .card-text {
+        font-size: 8px;
+    }
+}

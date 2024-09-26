@@ -1,0 +1,259 @@
+/* nav{
+    background-color: rgba(18, 42, 63, 1);
+} */
+
+body{
+    background: url(../assets/About\ us.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.profile{
+    display: flex;
+    background: url(../assets/About\ us.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    padding: 10.5%;
+}
+
+#title{
+    font-weight: 650;
+    font-size: 4rem;
+}
+
+.profile-text {
+    margin: auto;
+    padding: 5%;
+    font-size: 20px;
+    color: #000000;
+    background-color: rgba(218, 218, 218, 0.93);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #a46f41;
+    text-align: justify;
+}
+
+.history .box{
+    display: flex;
+    position: relative;
+    /* background-image: url(../assets/Logo\ Chanel.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: ;
+    margin-top: 3.5rem;
+    margin-left: 2.5rem;
+    background-size: 16.5rem; */
+}
+
+.history h1{
+    color: #fff;
+    font-weight: 200px;
+    margin-top: 5%;
+    padding-left: 8%;
+    padding-bottom: 1%;
+    font-style: italic;
+    font-size: 4rem;
+    z-index: 3;
+
+}
+
+.history h1, h2 {
+    text-align: center;
+}
+
+.history .box #bag {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    max-width: 40%;
+}
+
+.history .box #logo {
+    z-index: 1;
+    opacity: 0.2;
+    position: absolute;
+    left: -10;
+    max-width: 60%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 1rem;
+}
+
+.blue{
+    position: absolute;
+    margin-top: 50px;
+    background: rgb(225, 219, 215);
+    height: 508px;
+    width: 100%;
+    margin-bottom: 500px;
+}
+
+.space{
+    height: 180px;
+    width: 100%;
+}
+
+.card {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    padding: 1%;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #ECE9E6;
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+    background: linear-gradient(to bottom, #FFFFFF, rgb(226, 221, 211));
+}
+
+.card p{
+    padding: 0.5rem;
+    text-align: justify;
+    line-height: 25px;
+}
+
+@media (max-width: 1024px){
+    .blue{
+        height: 775px;
+    }
+}
+
+@media (max-width: 768px){
+    #title{
+        font-size: 1.5rem;
+    }
+
+    .profile-text{
+        font-size: 15px;
+    }
+
+    .history h1{
+        font-size: 2rem;
+    }
+
+    .blue{
+        height: 640px;
+    }
+
+    .card h2{
+        font-size: 1.1rem;
+    }
+
+    .card p{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 678px){
+    .blue{
+        height: 847px;
+    }
+}
+
+@media (max-width: 541px){
+    .blue{
+        height: 840px;
+    }
+}
+
+@media (max-width: 414px){
+    #title{
+        font-size: 1rem;
+    }
+
+    .profile-text{
+        margin-top: 7%;
+        font-size: 10px;
+    }
+
+    .history h1{
+        font-size: 1.5rem;
+    }
+
+    .blue{
+        height: 645px;
+    }
+
+    .space{
+        height: 50px;
+    }
+
+    .card h2{
+        font-size: 1rem;
+    }
+
+    .card p{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 376px){
+    #title{
+        font-size: 1.3rem;
+    }
+
+    .profile-text{
+        margin-top: 7%;
+        font-size: 10px;
+    }
+
+    .history h1{
+        font-size: 1.3rem;
+    }
+
+    .blue{
+        height: 435px;
+    }
+
+    .card h2{
+        font-size: 1rem;
+    }
+
+    .card p{
+        font-size: 0.65rem;
+        line-height: 14px;
+    }
+}
+
+@media (max-width: 280px){
+    #title{
+        font-size: 1rem;
+    }
+
+    .profile-text{
+        margin-top: 10%;
+        font-size: 9px;
+    }
+
+    .history h1{
+        font-size: 1rem;
+    }
+
+    .blue{
+        height: 475px;
+    }
+
+    .card{
+        padding: 1%;
+        width: 70%;
+    }
+    
+    .card h2{
+        font-size: 0.8rem;
+    }
+
+    .card p{
+        font-size: 0.5rem;
+        line-height: 14px;
+    }
+}
